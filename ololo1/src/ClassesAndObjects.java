@@ -3,16 +3,28 @@ public class ClassesAndObjects {
         Person person1 = new Person();
         person1.name = "Alex";
         person1.age = 25;
-        System.out.println("My name is " + person1.name + ", I'm " + person1.age + " y.o.");
+        person1.speak();
+
         Person person2 = new Person();
         person2.name = "Dorothea";
         person2.age = 29;
-        System.out.println("My name is " + person2.name + ", I'm " + person2.age + " y.o.");
+        //person2.speak();
+        person2.sayHello();
+        person2.speak();
     }
 }
 class Person{
     // данные(поля) + действия(методы)
     String name;
     int age;
+
+    void speak(){
+        for (int i = 0; i < 3; i++) {
+            System.out.println("My name is " + name + ", I'm " + age + " y.o.");}
+    }
+    void sayHello(){
+        System.out.println("Hello!");
+    }
+
 
 }
