@@ -13,8 +13,8 @@ public class ClassesAndObjects {
         person2.speak();
         int year1 = person1.calculateYearsToRetirement();
         int year2 = person2.calculateYearsToRetirement();
-        System.out.println("Person1 to retire: " + year1 + " years");
-        System.out.println("Person2 to retire: " + year2 + " years");
+        System.out.println(person1.name + " to retire: " + year1 + " years");
+        System.out.println(person2.name + " to retire: " + year2 + " years");
     }
 }
 class Person{
