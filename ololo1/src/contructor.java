@@ -9,6 +9,7 @@ public class contructor {
 class Man {
     private String name;
     private int age;
+
     public Man(){
         this.name = "Default name";
         this.age = 0;
