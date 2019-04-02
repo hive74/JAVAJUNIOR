@@ -1,4 +1,7 @@
 public class Animal {
+    String name = "SomeAnimal";
+
+
     public void eat(){
         System.out.println("I'm eating");
     }

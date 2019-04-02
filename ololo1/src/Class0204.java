@@ -6,5 +6,6 @@ public class Class0204 {
         dog.sleep();
         dog.eat();
         dog.bark();
+        dog.showName();
     }
 }
