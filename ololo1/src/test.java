@@ -2,17 +2,26 @@ import Forest.Smth.SomeClass;
 import Forest.Squirell;
 import Forest.Tree;
 import Forest.*;
-
+import Packer1.Person;
 import java.util.Scanner;
 
 
-public class test {
+public class test extends Person {
+
+
 
     public static void main(String[] args) {
-        //Tree tree1 = new Tree();
-        //Squirell squirell1 = new Squirell();
-        Scanner scanner = new Scanner(System.in);
-        SomeClass smcl = new SomeClass();
+        // public, private, default(доступен в пределах пакета), protected(в пределах одного пакета, все подклассам)
+        //Person person0 = new Person();
+        //person0.name = "Tray";
 
+        Person p1 = new Person();
+        System.out.println(p1.nameP); //error
     }
+
+    //private void technicalMethod(){            }
 }
+
+
+
+
