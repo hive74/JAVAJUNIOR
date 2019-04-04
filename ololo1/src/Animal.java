@@ -1,12 +1,12 @@
 public class Animal {
-    String name = "SomeAnimal";
+    //String name = "SomeAnimal";
 
 
     public void eat(){
-        System.out.println("I'm eating");
+        System.out.println("Animal is eating");
     }
     public void sleep(){
-        System.out.println("I'm sleeping");
+        System.out.println("Animal is sleeping");
     }
 
 
