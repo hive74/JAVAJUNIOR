@@ -6,6 +6,10 @@ public class types {
         int x = (int)l; //yavno
         long l1 = x; //neyavno
 
+
+        byte x1 = (byte)429;
+        System.out.println(x1);// -128 to 127
+
     }
 
 
