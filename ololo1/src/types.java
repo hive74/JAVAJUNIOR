@@ -10,6 +10,10 @@ public class types {
         byte x1 = (byte)429;
         System.out.println(x1);// -128 to 127
 
+        Integer x2 = new Integer(123);
+        Integer s1 = Integer.parseInt("321");
+
+
     }
 
 
