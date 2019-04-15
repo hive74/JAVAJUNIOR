@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class ReadingFromFile {
     public static void main(String[] args) throws FileNotFoundException {
@@ -12,9 +13,18 @@ public class ReadingFromFile {
         File file1 = new File(path1);
 
         Scanner scanner1 = new Scanner(file);
-        while(scanner1.hasNextLine()) {
-            System.out.println(scanner1.nextLine());
+        String line = scanner1.nextLine();
+        String[] numbers = line.split(" ");
+        System.out.println(Arrays.toString(numbers));
+        int [] numberI = new int[3];
+        int counter = 0;
+        for(String number : numbers) {
+            numberI[counter++] = Integer.parseInt(number);
+
         }
+
+        System.out.println(Arrays.toString(numberI));
+
         scanner1.close();
 
         //Scanner scanner = new Scanner(System.in);
