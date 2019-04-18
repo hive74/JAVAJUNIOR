@@ -6,7 +6,13 @@ public class Exception4 {
     public static void main(String[] args) {
         try {
             run();
-        } catch (IOException | ParseException e) {
+
+        }
+        catch (ParseException t) {
+            System.out.println("lalala");
+        }
+
+        catch (java.lang.Exception e) {
             e.printStackTrace();
         } 
 
