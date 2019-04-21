@@ -4,7 +4,7 @@ public class Dog extends Animal {
     }
 
 
-    public void bark(){
+    public void makeSound(){
         System.out.println("Dog is barking");
     }
 

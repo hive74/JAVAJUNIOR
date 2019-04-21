@@ -14,7 +14,7 @@ public class Exception4 {
 
         catch (java.lang.Exception e) {
             e.printStackTrace();
-        } 
+        }
 
     }
 

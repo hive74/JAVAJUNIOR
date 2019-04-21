@@ -1,13 +1,15 @@
-public class Animal {
+public abstract class Animal {
     //String name = "SomeAnimal";
 
 
-    public void eat(){
+    public void eat() {
         System.out.println("Animal is eating");
     }
-    public void sleep(){
+
+    public void sleep() {
         System.out.println("Animal is sleeping");
     }
 
 
+    public abstract void makeSound();
 }
