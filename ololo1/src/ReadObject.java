@@ -11,7 +11,7 @@ public class ReadObject {
 
                 ObjectInputStream ois = new ObjectInputStream(fis);
             try {
-                Person2304 person1 = (Person2304) ois.readObject();
+                Person2304 person1 = (Person2304)ois.readObject();
                 Person2304 person2 = (Person2304)ois.readObject();
                 System.out.println(person1);
                 System.out.println(person2);
