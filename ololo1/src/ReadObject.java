@@ -6,17 +6,17 @@ import java.io.ObjectInputStream;
 public class ReadObject {
     public static void main(String[] args) {
 
-        try {
-            FileInputStream fis = new FileInputStream("people.bin");
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("people.bin"))) {
+            //FileInputStream fis = new FileInputStream("people.bin");
 
-                ObjectInputStream ois = new ObjectInputStream(fis);
+                //ObjectInputStream ois = new ObjectInputStream(fis);
 
                 int personCount = ois.readInt();
-                Person[] people = new Person[personCount];
+                Person2304[] people = new Person2304[personCount];
 
                 for(int i = 0; i < personCount; i++) {
                     try {
-                        people[i] = (Person) ois.readObject();
+                        people[i] = (Person2304) ois.readObject();
                     } catch (ClassNotFoundException e1) {
                         e1.printStackTrace();
                     }
@@ -27,7 +27,7 @@ public class ReadObject {
                 //System.out.println(person1);
                 //System.out.println(person2);
 
-                ois.close();
+                //ois.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

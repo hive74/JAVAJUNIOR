@@ -10,19 +10,19 @@ public class WriteObject {
         //Person2304 person2 = new Person2304(5, "Keicy");
         Person2304[] people = {new Person2304(1,"Jack"), new Person2304(5, "Keicy"), new Person2304(7, "Charles")};
 
-        try {
-            FileOutputStream fos = new FileOutputStream("people.bin");
-                ObjectOutputStream oos = new ObjectOutputStream(fos);
+        try (ObjectOutputStream fos = new ObjectOutputStream(new FileOutputStream("people.bin")  )) {
+            //FileOutputStream fos = new FileOutputStream("people.bin");
+                //ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-                oos.writeInt(people.length);
+                fos.writeInt(people.length);
                 for(Person2304 Person2304 : people) {
-                    oos.writeObject(Person2304);
+                    fos.writeObject(Person2304);
                 }
 
                 //oos.writeObject(person1);
                 //oos.writeObject(person2);
 
-                fos.close();
+                //fos.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

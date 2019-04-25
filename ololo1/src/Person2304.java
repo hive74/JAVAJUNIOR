@@ -2,7 +2,9 @@ import java.io.Serializable;
 
 public class Person2304 implements Serializable {
     private int id;
-    private String name;
+    private transient  String  name;
+
+
 
     public Person2304(int id, String name) {
         this.id = id;
